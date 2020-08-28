@@ -9,4 +9,8 @@ import matplotlib.pyplot as plt
 fashion_mnist = keras.datasets.fashion_mnist
 (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
 
-print('hello')
+class_names = ['T-shirt/top', 'Trouser', 'Pullover','Dress','Coat',
+                'Sandal','Shirt','Sneaker','Bag','Ankle Boot']
+class_names[train_labels[51]]
+
+print(train_images.shape, test_images.shape) #28x28 image
